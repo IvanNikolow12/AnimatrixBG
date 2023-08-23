@@ -1,0 +1,147 @@
+.popular-this-bar {
+    background-color: #3a3c3e;
+    height: 747px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #000000;
+  }
+  
+  .popular-this-header {
+    background: linear-gradient(#c82626, #2733b5);
+    font-family: cursive;
+    font-size: 18px;
+    width: 150px;
+    padding: 0 10px;
+    border-radius: 5px;
+  }
+  
+  /* ////////////////////////////////////////////////////////// POPULAR THIS LIST !!!      */
+  
+  .popular-this-list {
+    width: 100%;
+    height: 88.5%;
+    position: relative;
+  }
+  
+  .popular-this-list-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 28px 0;
+  }
+  
+  .popular-this-list-item b {
+    color: rgb(133, 137, 142);
+  }
+  
+  .popular-this-list-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .ctr {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 3px;
+    margin: auto 15px;
+    padding: 0 5px;
+  }
+  
+  .imgseries {
+    display: inline-block;
+  }
+  
+  .leftseries {
+    width: 180px;
+    margin-left: 10px;
+  }
+
+
+  
+  .leftseries h1 {
+    width: 180px;
+    color: white;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .popular-this-img {
+    width: 100px;
+    height: 140px;
+    border-radius: 3px;
+  }
+  
+  .rt {
+    box-sizing: border-box;
+  }
+  
+  .serieslist .rating {
+    overflow: hidden;
+  }
+  
+  .rating-prc {
+    float: left;
+  }
+  
+  .rtp {
+    margin: 5px 0;
+    overflow: hidden;
+  }
+  
+  .rtb {
+    margin: 10px 0;
+    font-size: 12px;
+    width: 67px;
+    height: 14px;
+  }
+  
+  .rating-prc .rtp .rtb {
+    position: relative;
+      overflow: hidden;
+      color: #abb18d;
+      height: 15px;
+      line-height: 1;
+      width: 85px;
+      font-size: 15px;
+      margin: 0 auto;
+  }
+  
+  .checked {
+    color: rgb(236, 212, 0);
+  }
+  
+  .serieslist span {
+    margin: 0;
+      font-size: inherit;
+      color: inherit!important;
+  }
+  
+  .serieslist span::before {
+    content: "\f005\f005\f005\f005\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    top: 0;
+    position: absolute;
+    left: 0;
+  }
+  
+  .popular-this-lines {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: rgb(162, 158, 158);
+  }
+
+  @media screen and (max-width: 1200px) {
+    .leftseries {
+      width: max-content;
+    }
+  }

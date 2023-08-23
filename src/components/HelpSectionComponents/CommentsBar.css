@@ -1,0 +1,185 @@
+.comments-bar {
+    background-color: #3a3c3e;
+    position: absolute;
+    height: 435px;
+    width: 100%;
+    bottom: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #000000;
+  }
+  
+  .comments-bar-comments-section {
+    padding-top: 35px;
+  }
+
+  .comments-bar-comment-item {
+    height: 100px;
+    width: 100%;
+    position: relative;
+  }
+
+  .wpdiscuz-widget-popular-comment-author {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .comments-bar-icons {
+    display: flex;
+    position: relative;
+    width: 96%;
+    height: 60px;
+    border-style: ridge;
+    border-color: #9b9ca3;
+    margin: 0 auto;
+  }
+  
+  .comments-bar-comments-icon {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    color: rgb(205, 79, 79);
+  }
+  
+  .comments-bar-users-icon {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    color: rgb(205, 79, 79);
+  }
+  
+  .comments-bar-comments-icon:active {
+    transform: translateY(-4%);
+  }
+  
+  .comments-bar-users-icon:active {
+    transform: translateY(-4%);
+  }
+  
+  .comments-bar-icons hr {
+    width: 1px;
+    height: 100%;
+    border: none;
+    background-color: #92969a;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+  }
+  
+  .comments-bar-icons-header {
+    background: linear-gradient(#c82626, #2733b5);
+    font-family: cursive;
+    font-size: 18px;
+    width: 47%;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+  
+  .comment-avatar-box {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .comment-avatar-box-image {
+    max-width: 50px;
+  }
+  
+  .popular-comment-author-body {
+    height: 80px;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 13px;
+    margin-left: 10px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .popular-comment-author-body a {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .popular-comment-author-body p:not(:last-child) {
+    position: absolute;
+    margin: 0;
+    top: 20px;
+    color: #777c81;
+  }
+  
+  
+  .wpdwd-recent-comment-content {
+    position: absolute;
+    top: 38px;
+    font-size: 12px;
+    width: 95%;
+    height: 40px;
+    color: white;
+    /* overflow: hidden; */
+  }
+  
+  .delim {
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    transition: all .3s;
+    margin-top: 20px;
+  }
+
+
+  @media screen and (max-width: 1200px) {
+    .comments-bar-comments-section {
+      width: 820px;
+      padding-top: 32px;
+    }
+    .wpdiscuz-widget-popular-comment-author{
+      margin-top: 30px;
+      width: 820px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .comments-bar-comments-section {
+      width: 100%;
+      padding-top: 32px;
+    }
+    .wpdiscuz-widget-popular-comment-author{
+      margin-top: 30px;
+      width: 620px;
+    }
+  }
+
+  @media screen and (max-width: 670px) {
+    .comments-bar-comments-section {
+      width: 100%;
+      padding-top: 32px;
+    }
+    .wpdiscuz-widget-popular-comment-author{
+      margin-top: 20px;
+      width: 420px;
+    }
+    
+  }
+
+  @media screen and (max-width: 470px) {
+    .comments-bar-comments-section {
+      width: 100%;
+      padding-top: 32px;
+    }
+    .wpdiscuz-widget-popular-comment-author{
+      margin-top: 20px;
+      width: 350px;
+    }
+  }

@@ -1,0 +1,32 @@
+.send-coffe-bar {
+    background-color: #3a3c3e;
+    height: 80px;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #000000;
+  }
+  
+  .send-coffe-header {
+    background: linear-gradient(#c82626, #2733b5);
+    font-family: cursive;
+    font-size: 18px;
+    width: 77%;
+    border-radius: 6px;
+    padding: 0 10px;
+  }
+  
+  .send-coffe-content {
+    background: linear-gradient(rgb(19, 7, 7), rgb(178, 16, 16));
+    font-family: cursive;
+    font-size: 18px;
+    width: 55%;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    padding: 5px 6px;
+  }

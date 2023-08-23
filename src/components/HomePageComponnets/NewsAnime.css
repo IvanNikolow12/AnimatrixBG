@@ -1,0 +1,214 @@
+.news-anime-container {
+    background-color: #3a3c3e;
+    width: 99%;
+    height:460px;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 3px;
+      box-shadow: 0 0 10px black;
+  }
+  
+  .news-anime-header {
+    padding: 2px 0 0 10px;
+    background-color: rgb(194, 30, 68);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    margin: 0;
+    position: relative;
+  }
+  
+  .add-news-anime-button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .add-news-anime-button:hover {
+    transform: scale(1.1);
+    background-color: #3632327b;
+  }
+
+  .news-list {
+    position: absolute;
+    left: 5%;
+  }
+  
+  .news-list-item {
+   display: inline-block;
+   width: 300px;
+   height: 420px;
+   position: relative;
+   margin: 13px 30px 13px 30px;
+  }
+  
+  .news-list-item-image {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    border-radius: 15px;
+  }
+  
+  .news-list-item-header {
+    position: absolute;
+    top:33%;
+    left: 3%;
+    margin: 0;
+  }
+  
+  .news-list-item-content {
+    position: absolute;
+    top:45%;
+    left: 3%;
+    color: rgb(177, 205, 205);
+  }
+
+  .news-list-item-content {
+    height: 180px;
+    overflow-y: scroll;
+    margin: 5px 0 0 0 ;
+  }
+  
+  .news-list-item-content::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .news-list-item-content::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+   
+  /* Handle */
+  .news-list-item-content::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .news-list-item-content::-webkit-scrollbar-thumb:hover {
+    background: #1c1b1b; 
+  }
+  
+  .news-list-item-date {
+    position: absolute;
+    bottom:3%;
+    left: 3%;
+    color: rgb(194, 30, 68);
+  }
+
+  @media screen and (max-width: 1200px) {
+    .news-anime-container{
+      background-color: #3a3c3e;
+      position: absolute;
+      top: 3200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 820px;
+      height: 460px;
+      margin: 0 auto;
+      border-radius: 3px;
+    }
+    .news-list{
+      width: 100%;
+      height: 400px;
+      overflow-y: hidden;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .news-anime-container{
+      background-color: #3a3c3e;
+      position: absolute;
+      top: 3200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 620px;
+      height: 460px;
+      margin: 0 auto;
+      border-radius: 3px;
+    }
+    .news-list{
+      left: 0;
+      width: 100%;
+      height: 400px;
+      overflow-y: hidden;
+    }
+    .news-list-item {
+      width: 250px;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    .news-anime-container{
+      background-color: #3a3c3e;
+      position: absolute;
+      top: 3200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 460px;
+      margin: 0 auto;
+      border-radius: 3px;
+    }
+    .news-list{
+      left: 0;
+      width: 100%;
+      height: 400px;
+      overflow-y: hidden;
+    }
+    .news-list-item {
+      width: 240px;
+    }
+  }
+
+  @media screen and (max-width: 670px) {
+    .news-anime-container{
+      background-color: #3a3c3e;
+      position: absolute;
+      top: 3200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 420px;
+      height: 460px;
+      margin: 0 auto;
+      border-radius: 3px;
+    }
+    .news-list{
+      left: 0;
+      width: 100%;
+      height: 400px;
+      overflow-y: hidden;
+    }
+    .news-list-item {
+      left: 42%;
+      transform: translateX(-50%);
+      width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    .news-anime-container{
+      background-color: #3a3c3e;
+      position: absolute;
+      top: 3200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+      height: 460px;
+      margin: 0 auto;
+      border-radius: 3px;
+    }
+    .news-list{
+      left: 0;
+      width: 100%;
+      height: 400px;
+      overflow-y: hidden;
+    }
+    .news-list-item {
+      left: 42%;
+      transform: translateX(-50%);
+      width: 250px;
+    }
+  }

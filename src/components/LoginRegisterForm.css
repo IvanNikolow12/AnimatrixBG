@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.login-form-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1c1b1b; 
+  }
+
+.login-section
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.login-section::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000,rgb(194, 30, 68),#000);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+.login-section span 
+{
+  position: relative;
+  display: block;
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+.login-section span:hover 
+{
+  /* background: #0f0; */
+  transition: 0s;
+}
+
+.login-error-list {
+  color: rgb(255, 0, 0);
+}
+
+.login-section .signin
+{
+  position: absolute;
+  width: 400px;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+.login-section .signin .content 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.login-section .signin .content h2 
+{
+  font-size: 2em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.login-section .signin .content .form 
+{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.login-section .signin .content .form .inputBox
+{
+  position: relative;
+  width: 100%;
+}
+.login-section .signin .content .form .inputBox input 
+{
+  position: relative;
+  width: 100%;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 25px 10px 7.5px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1em;
+}
+.login-section .signin .content .form .inputBox i 
+{
+  position: absolute;
+  left: 0;
+  padding: 15px 10px;
+  font-style: normal;
+  color: #aaa;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signin .content .form .inputBox input:focus ~ i,
+.signin .content .form .inputBox input:valid ~ i
+{
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+.signin .content .form .links 
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.signin .content .form .links a 
+{
+  color: #fff;
+  text-decoration: none;
+}
+.signin .content .form .links a:nth-child(2)
+{
+  color: rgb(194, 30, 68);
+  font-weight: 600;
+}
+.signin .content .form .inputBox input[type="submit"]
+{
+  padding: 10px;
+  background: rgb(194, 30, 68);
+  color: #000;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+input[type="submit"]:active
+{
+  opacity: 0.6;
+}
+
+.links button {
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all, .3s ease-in-out;
+}
+
+.links button:hover {
+    color: rgb(194, 30, 68);
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px)
+{
+  .login-section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+}
+@media (max-width: 600px)
+{
+  .login-section span 
+  {
+    width: calc(20vw - 2px);
+    height: calc(20vw - 2px);
+  }
+}
+
+@media (max-width: 450px)
+{
+  .login-section span 
+  {
+    width: calc(10vw - 2px);
+    height: calc(10vw - 2px);
+  }
+
+  .login-section .signin {
+    width: 350px;
+    top: 100px;
+  }
+ .login-form-wrapper {
+  margin-top: -20px;
+ }
+}

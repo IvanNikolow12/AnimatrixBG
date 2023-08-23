@@ -1,0 +1,158 @@
+.main-navigation {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  .main-navigation ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .main-navigation li {
+    margin: 0 10px;
+  }
+
+  .main-navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  .home-button {
+    margin-top: 5px;
+  }
+
+  .logo-icon {
+    width: 50px;
+    display: flex;
+    margin-left: 10px;
+    justify-items: center;
+  }
+
+  .main-navigation a:hover {
+    color: rgb(194, 30, 68);
+  }
+  
+  .search-bar-form {
+    display: flex;
+    position: absolute;
+    left: 160px;
+    height: 30px;
+  }
+  
+  .main-navigation input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.2rem;
+  }
+  
+  .main-navigation button[type="submit"] {
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(194, 30, 68);
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .main-navigation button[type="submit"]:hover {
+    background-color: rgb(148, 5, 39);
+  }
+
+  .login-button {
+    display: flex;
+    margin: 5px;
+    z-index: 100;
+  }
+
+  .login-button button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .login-button button:hover {
+    color: rgb(194, 30, 68)
+  }
+  
+  .home-button-navigation {
+    display: flex;
+    z-index: 10000;
+    color: white;
+  }
+
+  .head-container{
+    background-color: rgb(194, 30, 68);
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+  }
+
+.head-container a {
+  display: inline-block;
+  margin: 7px 0 0 30px;
+  color: #c7cacd;
+  width: 40px;
+  height: 40px;
+}
+
+.head-container a:hover {
+  background-color: #00000033;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 470px) {
+  .main-navigation {
+    background-color: transparent;
+    color: #fff;
+    display: block;
+    width: max-content;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+  .main-navigation ul {
+    margin-bottom: 10px;
+  }
+  .main-navigation a:hover {
+    color: black;
+  }
+  
+  .home-button-navigation svg:hover {
+    color: black;
+  }
+  .search-bar-form {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: max-content;
+    margin: 5px auto;
+    z-index: 100;
+  }
+  
+  .home-button-navigation svg {
+    display: flex;
+    z-index: 10000;
+    color: white;
+  }
+
+  .head-container{
+    position: absolute;
+    top: 0;
+    background-color: rgb(194, 30, 68);
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+    z-index: 10;
+  }
+}

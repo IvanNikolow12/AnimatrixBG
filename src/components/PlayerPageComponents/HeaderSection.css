@@ -1,0 +1,114 @@
+.player-page-header-section {
+    background-color: #3a3c3e;
+    width: 820px;
+    height: 60px;
+    border-radius: 3px;
+    position: absolute;
+    top: 70px;
+    box-shadow: 0 2px 10px black;
+}
+
+
+.player-page-edit-button {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    transition: all, .2s ease-in-out;
+}
+
+.player-page-edit-button:hover {
+    transform: scale(1.1);
+}
+
+.player-page-header-title {
+    display: inline-block;
+    margin: 5px 0 0 10px;
+}
+
+.player-page-header-half-description {
+    display: flex;
+    margin: 0 5px;
+}
+
+.player-page-header-half-description p {
+    margin: 2px 5px;
+    color: #aab2ba;
+}
+
+.header-subtitle {
+    background-color: rgb(205, 176, 13);
+    padding: 0 4px;
+    border-radius: 5px;
+    color: black !important;
+}
+
+.header-autor span:hover {
+    color: crimson;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    .player-page-header-section {
+        width: 820px;
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .player-page-header-section {
+        width: 620px;
+        position: absolute;
+        top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .player-page-header-half-description {
+        width: 620px;
+        margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    
+    .player-page-header-section {
+        width: 600px;
+    }
+    .player-page-header-half-description {
+        width: 600px;
+        margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    
+    .player-page-header-section {
+        width: 470px;
+    }
+    .player-page-header-half-description {
+        width: 460px;
+        margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    
+    .player-page-header-section {
+        width: 350px;
+        top: 90px;
+        font-size: 14px;
+    }
+    .edit-icon {
+        width: 20px;
+        color: black;
+        margin-top: 10px;
+    }
+    .player-page-header-half-description {
+        width: 340px;
+        margin: 0 auto;
+    }
+  }

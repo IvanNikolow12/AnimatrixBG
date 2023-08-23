@@ -1,0 +1,54 @@
+.playlist_list_item {
+    display: flex;
+    cursor: pointer;
+    height: 80px;
+    transition: all, .2s ease-in-out;
+    border-radius: 3px;
+}
+
+.playlist_list_item:focus {
+  background-color: #00f0f0;
+}
+
+.playlist-link {
+  text-decoration: none;
+  color: white;
+  position: relative
+}
+
+.playlist_list_item:hover {
+  background-color: #2f3030;
+}
+
+
+.playlist-list-item-anime-image {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    margin: auto 10px;
+}
+
+.playlist-list-item-anime-info {
+    width: 230px;
+}
+
+.playlist-list-item-anime-title {
+    margin: 10px 0 0 0;
+}
+
+.playlist-list-item-anime-episode {
+    margin: 0;
+    font-size: 12px;
+    color: #818486;
+}
+
+.checked-item {
+  background-color: #1c1b1bb9;
+}
+
+.there-is-no-episodes {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  margin: 20px 0;
+}

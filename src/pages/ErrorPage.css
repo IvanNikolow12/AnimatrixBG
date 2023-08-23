@@ -1,0 +1,13 @@
+.page-not-found-container {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    padding-top: 5px;
+    position: relative;
+}
+
+.page-not-found-content {
+    display: inline-block;
+    align-items: center;
+    margin: 100px 200px;
+}

@@ -1,0 +1,107 @@
+.player-page-main-container {
+    position: relative;
+    width: 1200px;
+    height: 1680px;
+    margin: 0 auto;
+    padding-top: 15px;
+
+}
+
+.player-page-history-path {
+    background-color: #3a3c3e;
+    width: 820px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #000000;
+}
+
+.player-page-history-path p {
+    padding: 8px 0 3px 10px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.player-page-history-path a {
+    text-decoration: none;
+    color: white;
+}
+
+.player-page-history-path a:hover {
+    color: crimson;
+}
+
+@media screen and (max-width: 1200px) {
+    .player-page-main-container{
+        width: 1000px;
+        height: 1610px;
+        margin: 0 auto;
+        padding-top: 5px;
+    }
+    .player-page-history-path {
+        width: 820px;
+        height: 40px;
+        margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .player-page-main-container{
+        width: 820px;
+        height: max-content;
+        margin: 0 auto;
+    }
+    .player-page-history-path {
+        width: 620px;
+        height: 60px;
+        margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 820px) {
+    .player-page-main-container{
+        width: 620px;
+        height: 1610px;
+        margin: 0 auto;
+    }
+    .data-title {
+        max-width: 180px;
+        min-width: 100px;
+    }
+    .player-page-history-path {
+        width: 600px;
+        height: 60px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 620px) {
+    .player-page-main-container{
+        width: 470px;
+        height: max-content;
+        margin: 0 auto;
+    }
+    .player-page-history-path {
+        position: relative;
+        width: 460px;
+        height: 60px;
+
+        margin: 0 auto;
+    }
+  }
+
+  @media screen and (max-width: 470px) {
+    .player-page-main-container{
+        width: 350px;
+        height: max-content;
+        margin: 0 auto;
+    }
+    .player-page-history-path {
+        position: relative;
+        width: 330px;
+        height: 60px;
+
+        margin: 20px auto;
+    }
+  }

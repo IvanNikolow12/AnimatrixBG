@@ -1,0 +1,502 @@
+.details-page-main-section {
+    background-color: #3a3c3e;
+    width: 820px;
+    height: 780px;
+    position: absolute;
+    top: 60px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #000000;
+}
+
+.details-page-main-section {
+    position: relative;
+    margin-top: -40px;
+}
+
+.details-page-collection-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    filter: brightness(0.4);
+}
+
+.details-page-main-section-play-button {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    padding: 0;
+    transform: translateX(-50%);
+    cursor: pointer;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+}
+
+.details-page-collection-anime-poster {
+    position: absolute;
+    top: 325px;
+    left: 20px;
+    z-index: 1;
+    width: 180px;
+    border: 5px solid black;
+}
+
+.details-page-collection-raiting-container {
+    background-color: rgba(0, 0, 0, 0.625);
+    position: absolute;
+    top: 595px;
+    left: 20px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.details-page-collection-raiting-container h3 {
+    margin: 5px;
+}
+
+.details-page-collection-raiting-stars {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.details-page-collection-trailer-button {
+    position: absolute;
+    top: 665px;
+    left: 20px;
+    width: 180px;
+    height: 35px;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.details-page-collection-trailer-button:hover {
+    background-color: rgb(187, 1, 1);
+}
+
+.details-page-collection-like-button {
+    position: absolute;
+    top: 710px;
+    left: 90px;
+    background-color: crimson;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #deacac;
+    padding: 2px 4px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.details-page-collection-like-button:hover {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+.details-page-collection-like-button svg {
+    padding-top: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.details-page-collection-like-button svg:hover {
+    color: crimson;
+    transition: all .2s ease-in-out;
+}
+
+.details-page-collection-like-counter {
+    font-size: 15px;
+    position: absolute;
+    top: 717px;
+    left: 150px;
+    color: rgb(237, 167, 181);
+    border: none;
+}
+
+
+.details-page-main-section-upside-description {
+    width: 550px;
+    height: 300px;
+    position: absolute;
+    top: 380px;
+    left: 210px;
+    margin: 0;
+}
+
+.details-page-edit-button {
+    color: white;
+    position: absolute;
+    right: 0;
+    transition: all, .2s ease-in-out;
+}
+
+.details-page-edit-button:hover {
+    transform: scale(1.1);
+}
+
+.upside-description-title {
+    margin: 0 0 10px 10px;
+}
+.upside-description-japanese-title {
+    margin: 0 0 5px 10px;
+}
+
+
+.upside-description-paragraphs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+    overflow-y: scroll;
+}
+.upside-description-paragraphs::-webkit-scrollbar {
+    width: 2px;
+  }
+  
+  /* Track */
+  .upside-description-paragraphs::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+   
+  /* Handle */
+  .upside-description-paragraphs::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .upside-description-paragraphs::-webkit-scrollbar-thumb:hover {
+    background: #1c1b1b; 
+  }
+
+
+.upside-description-paragraphs p {
+    margin: 2px;
+}
+
+.upside-description-paragraphs svg {
+    color: rgb(194, 30, 68);
+    margin-right: 5px;
+}
+
+.upside-description-genres {
+    display: flex;
+    width: 600px;
+    overflow-x: scroll;
+}
+.upside-description-genres::-webkit-scrollbar {
+    height: 0;
+  }
+  
+  /* Track */
+  .upside-description-genres::-webkit-scrollbar-track {
+    background:transparent; 
+  }
+   
+  /* Handle */
+  .upside-description-genres::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  .upside-description-genres::-webkit-scrollbar-thumb:hover {
+    background: #1c1b1b; 
+  }
+
+.upside-description-genres button {
+    background-color: transparent;
+    margin: 10px;
+    border: solid 2px rgb(194, 30, 68);
+    padding: 4px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.trailer-container {
+    background-color: #000000df;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000000;
+    width: 100vw;
+    height: 100vh;
+    /* top: 40vh;
+    left: 40vw; */
+    /* filter: brightness(100%)!important; */
+}
+
+.trailer-video {
+    z-index: 100000;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trailer-cancel-button {
+    /* position: absolute; */
+    float: right;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #797f85;
+}
+
+@media screen and (max-width: 1200px) {
+    .details-page-main-section {
+        width: 820px;
+        height: 780px;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+    }
+
+    .trailer-video {
+        top: 25%;
+        width: 600px;
+        height: 400px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .details-page-main-section {
+        width: 620px;
+        height: 780px;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+    }
+
+    .details-page-main-section-upside-description {
+        width: 380px;
+        height: max-content;
+        position: absolute;
+        top: 360px;
+        left: 210px;
+        margin: 0;
+    }
+
+    .trailer-video {
+        top: 25%;
+        width: 500px;
+        height: 350px;
+    }
+
+    .upside-description-genres {
+        display: flex;
+        width: 360px;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .details-page-main-section {
+        width: 600px;
+        height: 780px;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+    }
+
+    .details-page-main-section-upside-description {
+        width: 380px;
+        height: max-content;
+        position: absolute;
+        top: 380px;
+        left: 210px;
+        margin: 0;
+    }
+    .upside-description-genres {
+        display: flex;
+        width: 360px;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
+    .details-page-main-section {
+        width: 470px;
+        height: 670px;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        
+    }
+    .details-page-collection-background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        filter: brightness(0.4);
+    }
+
+    .details-page-main-section-play-button {
+        position: absolute;
+        top: 80px;
+    }
+
+    .details-page-collection-anime-poster {
+        position: absolute;
+        top: 200px;
+    }
+
+    .details-page-collection-raiting-container {
+        position: absolute;
+        top: 460px;
+    }
+   
+    .details-page-collection-trailer-button {
+        position: absolute;
+        top: 520px;
+    }
+
+    .details-page-collection-like-button {
+        position: absolute;
+        top: 565px;
+    }
+    
+    .details-page-collection-like-counter {
+        position: absolute;
+        top: 575px;
+    }
+
+    .details-page-main-section-upside-description {
+        width: 250px;
+        height: 320px;
+        position: absolute;
+        top: 280px;
+        left: 210px;
+        margin: 0;
+    }
+
+    .trailer-video {
+        top: 25%;
+        width: 350px;
+        height: 200px;
+    }
+    .upside-description-paragraphs {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        height: 220px;
+    }
+
+    .upside-description-genres {
+        display: flex;
+        width: 240px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .details-page-main-section {
+        width: 340px;
+        height: 610px;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 30px auto;
+    }
+    .details-page-collection-background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 220px;
+        filter: brightness(0.4);
+    }
+
+    .details-page-main-section-play-button {
+        position: absolute;
+        top: 75px;
+    }
+
+    .details-page-collection-anime-poster {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        width: 130px;
+        height: 200px;
+    }
+
+    .details-page-collection-raiting-container {
+        position: absolute;
+        top: 410px;
+        left: 10px;
+        width: 130px;
+    }
+   
+    .details-page-collection-trailer-button {
+        position: absolute;
+        top: 480px;
+        left: 10px;
+        width: 130px;
+    }
+
+    .details-page-collection-like-button {
+        position: absolute;
+        top: 520px;
+        left: 55px;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .details-page-collection-like-counter {
+        position: absolute;
+        top: 525px;
+        left: 100px;
+    }
+
+    .details-page-main-section-upside-description {
+        width: 190px;
+        height: 320px;
+        position: absolute;
+        top: 230px;
+        left: 140px;
+        margin: 0;
+    }
+
+    .trailer-container {
+        z-index: 10000000000000;
+    }
+    .upside-description-title {
+        font-size: 17px;
+        width: 150px;
+    }
+
+    .upside-description-paragraphs {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        height: 220px;
+    }
+
+    .upside-description-genres {
+        display: flex;
+        width: 185px;
+    }
+}

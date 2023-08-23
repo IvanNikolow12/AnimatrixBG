@@ -1,0 +1,55 @@
+.genres-page-search-by-bar {
+    position: relative;
+    background-color: #3a3c3e;
+    height: 160px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #000000;
+  }
+
+  .genres-page-search-by-header {
+    background: linear-gradient(#c82626, #2733b5);
+    font-family: cursive;
+    font-size: 18px;
+    width: 55%;
+    padding: 0 10px;
+  }
+  
+  .genres-page-search-by__list {
+    display: grid;
+    width: 250px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    margin: 0 auto;
+  }
+  
+  .search-by__search-button {
+    background-color: rgb(194, 30, 68);
+    border: none;
+    cursor: pointer;
+    width: 260px;
+    height: 23px;
+    position: absolute;
+    top: 113px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px auto;
+  }
+  
+  .search-by__search-button:hover {
+    background-color: #781d2b;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .super {
+    background-color: #2d3842;
+    color: rgb(194, 194, 0);
+    border-style: double;
+  }
+
+  @media screen and (max-width: 470px) {
+  
+  .genres-page-search-by-bar {
+    top: 40px;
+  }
+  }
