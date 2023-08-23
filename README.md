@@ -10,16 +10,16 @@ Full ONLINE React app with RealTime Database.
   3. Details page.
   4. Player page.
   5. Genres page.
-  6. Add/Edit Collection page
-  7. Add/Edit Episode page
-  8. Add/Edit NewsLetter
-  9. Search by Name
-  10. Search by Style/Type/Status/Studio
+  6. Add/Edit Collection page.
+  7. Add/Edit Episode page.
+  8. Add/Edit NewsLetter.
+  9. Search by Name.
+  10. Search by Style/Type/Status/Studio.
 
-*11* Responsive Design on every display(desktop/mobile)
+*11.* Responsive Design on every single display (desktop/mobile).
 
   12.Using Firebase
-    13.Back-End
-    14.Realtime Database
-    15.Authentication
-    16.Hosting
+    13.Back-End.
+    14.Realtime Database.
+    15.Authentication.
+    16.Hosting.
